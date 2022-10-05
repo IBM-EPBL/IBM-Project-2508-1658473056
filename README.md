@@ -4,4 +4,4 @@ Team Members:
   Team Lead - Joshua Dayalan M
   Team Member 1 - Rohith R
   Team Member 2 - Aldrin Gnanoj G
-  Team Member 3 - Amirtharaj M
+  Team Member 3 - Amirtharaj 
