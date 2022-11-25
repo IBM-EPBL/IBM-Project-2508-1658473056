@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="\static\css\bootstrap.min.css">
+  <script src="\static\js\bootstrap.bundle.min.js"></script>
+  <script src="\static\js\bootstrap.min.js"></script>
+  <style>
+    .navbar {
+      z-index: 99;
+    }
+
+    .sliderFade {
+      animation: fade 0.5s ease;
+    }
+
+    .sliderThumb,
+    .sliderMainImage {
+      cursor: pointer;
+    }
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  <script type="text/javascript">
+    const reloadtButton = document.querySelector("#reload");
+// Reload everything:
+function reload() {
+    reload = location.reload();
+}
+// Event listeners for reload
+reloadButton.addEventListener("click", reload, false);
+window.history.forward();
+    function noBack()
+    {
+        window.history.forward();
+    }
+  </script>
+</head>
+
+<body>
+  <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide">
+      </li>
+      <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+      <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <img
+          src="https://img.freepik.com/premium-psd/fashion-sale-social-media-facebook-cover-design-template_169307-1003.jpg?w=2000"
+          class="w-100 d-block" alt="First slide" style="height:280px ;">
+      </div>
+      <div class="carousel-item">
+        <img style="height:280px ;"
+          src="https://img.freepik.com/premium-vector/iconic-fashion-sale-social-media-post-templates_48159-857.jpg"
+          class="w-100 d-block" alt="second slide">
+      </div>
+      <div class="carousel-item">
+        <img style="height:280px;"
+          src="https://marketplace.canva.com/EAFCQvbIa5Q/2/0/1600w/canva-colorful-playful-kids-%26-baby-store-presentation-aRe9FAB3yLs.jpg"
+          class="w-100 d-block" alt="Third slide">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#mens">Men's</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" aria-current="page">Home <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Action 1</a>
+              <a class="dropdown-item" href="#">Action 2</a>
+            </div>
+          </li>
+        </ul>
+        <form class="d-flex my-2 my-lg-0">
+          <input class="form-control me-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="row d-flex justify-content-center mt-5">
+   
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img src="\static\images\img1.jpg" class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Tara Dress
+        </p>
+        <small class="text-secondary">
+          Rs.699
+        </small>
+      </div>
+    </div>
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img src="\static\images\img2.jpg" class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          RB T shirt
+        </p>
+        <small class="text-secondary">
+          Rs.499
+        </small>
+      </div>
+    </div>
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img src="\static\images\img3.jpg" class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          NightDress
+        </p>
+        <small class="text-secondary">
+          Rs.799
+        </small>
+      </div>
+    </div>
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img src="\static\images\img4.jpg" class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Max mara pauline coat
+        </p>
+        <small class="text-secondary">
+          Rs.999
+        </small>
+      </div>
+    </div>
+
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img src="\static\images\img5.jpg" class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Muschio flora
+        </p>
+        <small class="text-secondary">
+          Rs.699
+        </small>
+      </div>
+
+    </div>
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img src="\static\images\img6.jpg" class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Hola Bointa
+        </p>
+        <small class="text-secondary">
+          Rs.1999
+        </small>
+      </div>
+    </div>
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img src="\static\images\img7.jpg" class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Harald max mara
+        </p>
+        <small class="text-secondary">
+          Rs. 1799
+        </small>
+      </div>
+    </div>
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img src="\static\images\img8.jpg" class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Legins pant
+        </p>
+        <small class="text-secondary">
+          Rs. 1499
+        </small>
+      </div>
+    </div>
+
+
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img src="\static\images\img9.jpg" class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Brown silk velvet
+        </p>
+        <small class="text-secondary">
+          Rs. 1457
+        </small>
+      </div>
+
+    </div>
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img
+          src="https://cdn.babycouture.in/pub/media/catalog/product/cache/0b315228ed332efca91f606c91ba025b/d/i/diana_black_floral_kids_dress.jpg"
+          class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Diana black and florida dress
+        </p>
+        <small class="text-secondary">
+          Rs. 2500
+        </small>
+      </div>
+    </div>
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img
+          src="https://greentikki.com/wp-content/uploads/2021/03/WhatsApp-Image-2021-03-16-at-4.19.13-PM-350x435.jpeg"
+          class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Boys party wear
+        </p>
+        <small class="text-secondary">
+          Rs. 899
+        </small>
+      </div>
+    </div>
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0029/7041/9313/products/Baby-Boys-Clothes-Suits-for-Wedding-Kids-British-Style-Birthday-Dress-Boy-Gentleman-Suit-3pcs-set_large.jpg?v=1535735873"
+          class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Kids wedding dress
+        </p>
+        <small class="text-secondary">
+          Rs.1299
+        </small>
+      </div>
+    </div>
+
+
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img src="https://s.alicdn.com/@sc04/kf/H7a283856a28f46049bd97190f774bf0ce.jpg" class="card-img-top"
+          height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Kids Party wear
+        </p>
+        <small class="text-secondary">
+          Rs.1899
+        </small>
+      </div>
+
+    </div>
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html" id="mens">
+        <img src="https://n2.sdlcdn.com/imgs/i/y/5/Boys-clothing-sets-spring-autumn-SDL575955769-1-08386.jpg"
+          class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Cotton spring dress
+        </p>
+        <small class="text-secondary">
+          Rs. 699
+        </small>
+      </div>
+    </div>
+
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img
+          src="https://cdn11.bigcommerce.com/s-pkla4xn3/images/stencil/1280x1280/products/11753/114418/2018-Fashion-New-Male-Shirt-Long-Sleeve-Mens-Clothes-Oblique-Button-Dress-Shirts-Mandarin-Collar-Men__02469.1574244136.jpg?c=2"
+          class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Mens full hand shirt
+        </p>
+        <small class="text-secondary">
+          Rs.699
+        </small>
+      </div>
+    </div>
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img
+          src="https://ae01.alicdn.com/kf/HTB1I6BNQVXXXXbRXXXXq6xXFXXXT/2017-New-Arrival-Summer-mens-Hooded-t-shirt-fashion-cap-t-shirts-men-casual-crop-short.jpg"
+          class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Mens Hoodies
+        </p>
+        <small class="text-secondary">
+          Rs.1399
+        </small>
+      </div>
+    </div>
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img src="https://content.jdmagicbox.com/rep/b2b/mens-fashion-shirt/mens-fashion-shirt-8.jpg"
+          class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Coat cotton shirt
+        </p>
+        <small class="text-secondary">
+          Rs. 11699
+        </small>
+      </div>
+
+    </div>
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html" id="mens">
+        <img src="https://m.media-amazon.com/images/I/71dol5U2hcL._UX569_.jpg" class="card-img-top" height="400px"
+          width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Full hand cotton Dress
+        </p>
+        <small class="text-secondary">
+          Rs. 1499
+        </small>
+      </div>
+    </div>
+    <div class="card m-2" style="width:20%;">
+      <a href="./base.html">
+        <img
+          src="https://rukminim1.flixcart.com/image/332/398/xif0q/fabric/x/p/6/no-2-35-m-unstitched-na-gras-trijal-fab-original-imagahyhxy6xgmsr-bb.jpeg?q=50"
+          class="card-img-top" height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          lycra shirt
+        </p>
+        <small class="text-secondary">
+          Rs.499
+        </small>
+      </div>
+    </div>
+    <div class="card m-2" style="width:20%;">
+      <a href="https://www.waamall.com/?product_id=156371602_31">
+        <img src="https://cdn3.volusion.com/ba3tg.hs2vg/v/vspfiles/photos/g7760-0601-2.jpg" class="card-img-top"
+          height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          Men designer fashion dress
+
+        </p>
+        <small class="text-secondary">
+          Rs. 2999
+        </small>
+      </div>
+    </div>
+    {% for product in products %}
+    <div class="card m-2" style="width:20%;">
+      <a href="http://127.0.0.1:5500/templates/base.html">
+        <img src="https://prieeass1.s3.jp-tok.cloud-object-storage.appdomain.cloud/{{product[0]}}" class="card-img-top"
+          height="400px" width="25px" alt="product" /></a>
+      <div class="card-body">
+        <p class="card-text fw-bold">
+          {{product[1]}}
+        </p>
+        <small class="text-secondary">
+          Rs.{{product[5]}}
+        </small>
+      </div>
+
+    </div>
+    {% endfor %}
+  </div>
+  <a href="./base.html" class="btn btn-outline-dark my-5">View All Products</a>
+  <div class="d-flex justify-content-between align-items-center flex-column flex-lg-row my-5">
+    <section class="my-5 mx-auto py-5" style="max-width: 25em;">
+      <h2>Subscribe To Our Newsletter</h2>
+      <form class="d-flex my-4">
+        <input class="form-control me-2" type="email" placeholder="Your Email" />
+        <button class="btn-outline-dark" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </div>
+
+
+
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "eb2259f3-2f07-4f26-9490-245b15cec951", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "009a5aaa-148c-4708-8fa2-ce7e287f5bc9", // The ID of your service instance.
+      onLoad: function (instance) { instance.render(); }
+    };
+    setTimeout(function () {
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="d-flex justify-content-between my-5 text-start flex-wrap">
+    <ul class="nav flex-column">
+      <li class="fw-bold nav-item">
+        <a href="#" class="nav-link text-dark">Product</a>
+
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-muted">Clothing</a>
+      </li>
+
+    </ul>
+
+
+
+
+  </footer>
+</body>
+
+</html>
